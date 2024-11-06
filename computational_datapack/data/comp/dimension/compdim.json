@@ -1,0 +1,13 @@
+{
+    "type": "comp:compdim_type",
+    "generator": {
+        "type": "flat",
+        "settings": {
+            "layers": [],
+            "biome": "plains",
+            "lakes": false,
+            "features": false,
+            "structure_overrides": []
+        }
+    }
+}
