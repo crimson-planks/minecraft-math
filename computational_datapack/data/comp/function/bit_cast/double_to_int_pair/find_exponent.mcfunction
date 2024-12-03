@@ -13,3 +13,6 @@ tellraw @a [{"text":"dexp_32: "},{"storage": "comp:tmp","nbt": "dexp_32"}]
 
 #conditions: if 65 is 'E'
 #just overwrite a scoreboard value if 'E' is found and '-' is found
+data modify storage comp:tmp current_char set from storage comp:tmp dexp_23
+execute store success score is_not_E comp_double_to_int_pair run data modify storage comp:tmp current_char set value 'E'
+tellraw @a [{"text":"is_not_E: "},{"score": {"name": "is_not_E","objective": "comp_double_to_int_pair"}}]
